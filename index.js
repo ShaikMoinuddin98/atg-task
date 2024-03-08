@@ -69,7 +69,7 @@ main()
 })
 async function main()
 {
-    await mongoose.connect("mongodb://127.0.0.1:27017/login");
+    await mongoose.connect("mongodb+srv://King-Moin:Moin-7093@cluster0.3uvscb7.mongodb.net/");
 }
 
 //our schema of db
