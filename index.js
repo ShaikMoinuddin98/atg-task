@@ -263,7 +263,7 @@ app.post("/forgetpass", async (req, res) => {
         }
         console.log(payload)
         const token=jwt.sign(payload,secret,{expiresIn:"2m"})
-        const link=`http://localhost:9000/reset-pass/${user.id}/${token}`
+        const link=`https://atg-task-2ge2.onrender.com/reset-pass/${user.id}/${token}`
         console.log(link)
         mailoptions.to=mail
         mailoptions.subject="Password Reset Request"
